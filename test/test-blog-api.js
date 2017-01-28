@@ -50,21 +50,23 @@ describe('Blog Posts', function() {
       author: 'tester',
       publishDate: '1-22-2017'
     };
-    console.log(updateData);
     return chai.request(app)
     .get('/blog-posts')
     .then(function(res) {
-      console.log("THIS IS THE CONSOLE LOG " + res + " " + updateData.id);
+      
       updateData.id = res.body[0].id;
-      return chai.request(app)
-        .put(`/blog-posts/${updateData.id}`)
-        .send(updateData);
+      console.log("THIS IS THE CONSOLE LOG ", updateData.id);
+     return updateData.id;
+    })
+    .then(function(id) {
+     return chai.request(app)
+      .put(`/blog-posts/${id}`)
+      .send(updateData);
     })
     .then(function(res) {
-      console.log(res.body);
-      /*res.should.have.status(200);
+      res.should.have.status(200);
       res.should.be.json;
-      res.body.should.be.a('object');*/
+      res.body.should.be.a('object');
       res.body.should.deep.equal(updateData);
     });
   });

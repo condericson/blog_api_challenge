@@ -54,12 +54,11 @@ router.put('/:id', jsonParser, (req, res) => {
   	author: req.body.author,
   	publishDate: req.body.publishDate
   });
-  res.status(204).json(updatedItem);
+  return res.status(201).send(updatedItem);
 });
 
 router.delete('/:id', (req, res) => {
 	BlogPosts.delete(req.params.id);
-	console.log(`Deleted blog post \`${req.params.id}\``)
 	res.status(204).end();
 });
 
