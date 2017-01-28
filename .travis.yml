@@ -1,3 +1,9 @@
 language: node_js
-node_js: node
-  - "4"
+node_js: node - "4"
+deploy:
+  provider: heroku
+  api_key:
+    secure: vMkMYsd3dXgXAaJenhwCQZXUn9XDo6FR5cd0khrUxG6Ht2X2tEkpdxYj/WGOVaL447zizRyqvOod3zRo/vvBkClETVCL9Zt043UzOoowYqpeF4bXbWuZI1zOMZA3N8Qf+yMFpyyvTVC30C0yq/2B+eZsn4ZYkZ5PZmX7GPcKmNVYT8iuQyRWgsuxugcjeQdiV2hYzGeUMXmbmjvqOwDNF9WHWf2Ge9PBTC3F7SE65kVHYIiUzBpH2iKH9edUQrg+B0Dif6McmYfMuJ8pM4EGd2CnY/47Z3h9QLn7/S/IrLKkJluetzMvFNu/XSXBgsjL43EGvD1R2DfipgN0Y2l576srfssHF6RWfX3DD0Fm6hLGzSAtZ1dxAUfElkoJx5zWdsNCvpRo+lwXGjMe+nqaJAqw/kNUE0bONXXLnuATUJIul+HMeDWyHsahvNe+PwrKUeNpo4oU8dRBOz30UkUe3d5KROWdyS+WTHJleZsDEcqZyes/OlcvGJE9YJoBQrh2XN+Y+Cbh9CwGeCF8xrlyp8InQIjggr/JhhF/b9wj1VaSWTfZnX4+nvADk3zpKXde9xGbpdFoXhsSVeDqBzfUqAgKAXnELZW6ybJRK/J04ZT1R0WCeZOd5c0H5PafZOFJ5btTufvw0ETPZmFTO4/TelB1NY5whEKR5aMjNIDKLpM=
+  app: pacific-scrubland-64379
+  on:
+    repo: condericson/blog_api_challenge
