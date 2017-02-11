@@ -1,9 +1,10 @@
 language: node_js
 node_js: node
+services: mongodb
 deploy:
   provider: heroku
   api_key:
     secure: sCDTwdNSUageXfrOgpkSlzTvEe4DHi2vWmZlbbD/XVpPOB0Wf6eRF0h+nTKUPA4prgGQxapd6+VvCpOVtOKgTT7kR3YoTKjAw39v8VpiSA5/QEhfturwZV/9yZGP7QxsoElOtK2wphcMoR+o2bbMXCNh21Tj2rV6utU3iuWKWPqZTf08Sd+yBdTcXm9xof/9zmbNWpQGBaYHE77uBc1ZQNesYEgERQu/NRQltXTurBbITLntGYBCq5QWvADzkzH+m4nZGJzZYYCDNTDc28WY/tiwhHZJAvCxsMrDB88zUEAvCC2pT3KhsDL6P4z74D4FI3wW3THtFR3EVsqcNpt5GN/Ef+lbP6x3XQFw8HdF6rMaq5HRr6S+97ASt8JOxUPBDMsGE4XvJ2+GT6YW74+wG60LjZnSBEq3bMStaowtZTX/7Q4axZ9OR5WZR7L804vJNkTelQCcKPdYOaz5bQQoDimQUjV2pu0uDopJjZKJe/2YSAuSD6hxJ+j3bHTbqNO/JrOBazoG13Ls8tPSXyJ5uYxBhPpUD+opVddCOo81YcEhHoaWv0f4GeNVWf1u3cJXxZT9BZ3K3dy86euLHIGnyIRjV5IJrBUvAY9jbX1FgPBiPwTl/x9tTAKTx9vbhzp9RSuUDL8Qtzi3Pfs8fOGtYSQgds0NK4rYmsB3UHNvS2k=
-  app: blog_api_challenge
+  app: radiant-bayou-41127
   on:
     repo: condericson/blog_api_challenge
