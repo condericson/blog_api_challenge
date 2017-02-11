@@ -8,3 +8,4 @@ deploy:
   app: radiant-bayou-41127
   on:
     repo: condericson/blog_api_challenge
+before_script: chmod 0777 ./node_modules/.bin/mocha
